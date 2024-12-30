@@ -5,13 +5,180 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planets fact site</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Spartan';
+      font-weight: 400 500 700;
+      font-display: swap;
+      src: url(assets/fonts/Spartan-Regular.ttf), url(assets/fonts/Spartan-Bold.ttf), url(assets/fonts/Spartan-Medium.ttf);
+    }
+    
+    html {
+      font-family: "Spartan", serif;
+    }
+    
+     body {
+      padding: 0;
+      color: var(--white-pure);
+      background-color: var(--midnight);
+     }
+
+    * {
+      margin: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header>
-    <h1>The Planets</h1>
+  <header class="header-site">
+    <h1 aria-label="The Planets" class="header-title">
+      The Planets
+    </h1>
+    <button
+      class="menu-button"
+      aria-label="Open menu"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" fill="none">
+        <rect width="24" height="3" fill="white"/>
+        <rect y="7" width="24" height="3" fill="white"/>
+        <rect y="14" width="24" height="3" fill="white"/>
+      </svg>
+    </button>
+    <ul class="header-menu" role="menu">
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#DEF4FC"/>
+            </svg>
+            Mercury
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#F7CC7F"/>
+            </svg>
+            Venus
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#545BFE"/>
+            </svg>
+            Earth
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#FF6A45"/>
+            </svg>
+            Mars
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#ECAD7A"/>
+            </svg>
+            Jupiter
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#FCCB6B"/>
+            </svg>
+            Saturn
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#65F0D5"/>
+            </svg>
+            Uranus
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+      <li role="none" class="header-menu-item">
+        <a href="#" role="menuitem" class="header-menu-link">
+          <div>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#497EFA"/>
+            </svg>
+            Neptune
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path opacity="0.4" d="M1 1L5 5L1 9" stroke="white"/>
+          </svg>
+        </a>
+      </li>
+    </div>
   </header>
   <main>
-    
+    <section class="planet-options">
+      <ul>
+        <li>
+          Overview
+        </li>
+        <li>
+          Structure
+        </li>
+        <li>
+          Space
+        </li>
+      </ul>
+    </section>
   </main>
+  <script>
+    const menuButton = document.querySelector('.menu-button')
+    menuButton.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true'
+      menuButton.setAttribute('aria-expanded', !isExpanded)
+    })
+    
+  </script>
 </body>
 </html>

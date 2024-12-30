@@ -1,0 +1,106 @@
+:root {
+  --white-pure: #FFFFFF;
+  --midnight: #070724;
+  --lunar-dark-gray: #38384F;
+  --silver-mist: #838391;
+
+  --caribbean-blue: #419EBB;
+  --autumn-yellow: #EDA249;
+  --royal-purple: #6F2ED6;
+  --clay-red: #D14C32;
+
+  --vibrant-scarlet: #D83A34;
+  --warm-terracotta: #CD5120;
+  --turquoise-green: #1EC2A4;
+  --electric-blue: #2D68F0;
+}
+
+h1 {
+  font-family: "Antonio";
+  font-size: 1.75rem;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.header-site {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--lunar-dark-gray);
+  position: relative;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+}
+
+.header-menu {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding-left: 0;
+}
+
+.header-menu-item {
+  list-style: none;
+}
+
+.header-menu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu-link svg {
+  vertical-align: text-bottom;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.header-menu-item + .header-menu-item {
+  border-top: 1px solid var(--lunar-dark-gray);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-family: "Antonio";
+    font-size: 5rem;
+    line-height: 103px;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-family: "Antonio";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+  }
+  
+  h3 {
+    font-family: "Spartan";
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+  }
+  
+  h4 {
+    font-family: "Spartan";
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+}
+
+
